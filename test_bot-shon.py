@@ -5,8 +5,9 @@ from coinbase.wallet.client import Client
 #print("gb world")
 #print(data)
 
-coinbase_API_key = '9xF36UsqaybNxP2M'
-coinbase_API_secret = '6NXAzklQF2BwrlQivB0t6alFOmBXuqfW'
+# Add api key and api secret environment variables
+coinbase_API_key = Environment_Variable
+coinbase_API_secret = Environment_Variable
 client = Client(coinbase_API_key, coinbase_API_secret)
 print(client.get_current_user())
 
